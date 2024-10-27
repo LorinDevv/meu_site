@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+#sec, .dados, #logo{
+	font-family: Andale Mono, monospace;;
+}
+ul {
+	display: flex;
+	list-style: none;
+}
+
+#logo{
+	padding: 10px;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+    width: 100%;
+	align-items: center;
+	background-color: black;
+}
+header a{
+	color: white;
+	text-decoration: none;
+}
+
+li a{
+	padding: 5px;
+}
+
+#sec{
+	width: 100%;
+	text-align: center;
+}
+.containerA {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 1500px;
+}
+.containerA > section {
+	flex: 1 1 270px;
+	margin: 10px;
+}
+
+.container img{
+	width: 600px;
+	max-width: 100%;
+	display: block;
+}
+
+.containerB {
+	text-align: center;
+	color: gray;
+}
+
+@media only screen and (max-width: 550px) {
+#logo{
+	color: white;
+	font-size: 50px;
+}
+
+ul {
+	height: 150px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 5px;
+	margin-right: 22px;
+}
+ul a{
+	margin: 2px;
+}
+
+li {
+	background: gray;
+	display: inline;
+	width: 85px;
+	text-align: center;
+}
+}
